@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#EDE2C8" />
+  <meta name="description" content="LOUSA MOON — a thoughtful cycle and wellness experience." />
+  <link rel="icon" href="assets/lousa-crescent.png" type="image/png" />
+  <title>LOUSA MOON — The Lunar Codex</title>
+  <link rel="preload" href="assets/lousa-master-scroll-hq.mp4" as="video" type="video/mp4" media="(min-width: 901px)" />
+  <link rel="preload" href="assets/lousa-master-scroll.mp4" as="video" type="video/mp4" media="(max-width: 900px)" />
+  <link rel="preload" href="assets/01.webp" as="image" type="image/webp" />
+  <link rel="stylesheet" href="styles.css?v=7" />
+</head>
+<body>
+  <a class="skip-link" href="#experience">Skip to experience</a>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="LOUSA MOON home">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="assets/lousa-crescent.png" alt="" />
+      </span>
+      <span class="brand-wordmark">LOUSA MOON</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary navigation">
+      <button class="nav-link" data-jump="cycle">Cycle</button>
+      <button class="nav-link" data-jump="wellness">Wellness</button>
+      <button class="nav-link" data-jump="box">The Box</button>
+      <button class="nav-link" data-jump="delivery">Delivery</button>
+      <button class="nav-cta" data-jump="final">Begin</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="scroll-experience" id="experience" aria-label="LOUSA MOON interactive story">
+      <div class="stage" id="stage">
+        <video
+          id="masterVideo"
+          class="stage-video"
+          muted
+          playsinline
+          preload="auto"
+          poster="assets/01.webp"
+          aria-hidden="true"
+        >
+          <source src="assets/lousa-master-scroll-hq.mp4" type="video/mp4" media="(min-width: 901px)" />
+          <source src="assets/lousa-master-scroll.mp4" type="video/mp4" />
+        </video>
+
+        <img class="final-scene" id="finalScene" src="assets/07-final-hires.png" alt="" aria-hidden="true" />
+
+        <div class="cinematic-atmosphere" aria-hidden="true">
+          <span class="atmosphere-bloom"></span>
+          <span class="atmosphere-sheen"></span>
+          <span class="atmosphere-orbit"></span>
+        </div>
+        <div class="video-veil" aria-hidden="true"></div>
+        <div class="paper-noise" aria-hidden="true"></div>
+
+        <div class="chapter-layer" id="chapterLayer">
+          <article class="chapter align-left" data-chapter="hero" id="chapter-hero">
+            <p class="eyebrow">LOUSA MOON</p>
+            <h1>Know your rhythm.<br />Care for it.</h1>
+            <p class="chapter-copy">A thoughtful way to follow your cycle, notice personal patterns and understand how you feel throughout the month.</p>
+            <div class="actions">
+              <button class="button primary" data-jump="cycle">Explore your rhythm</button>
+              <button class="button text-button" data-jump="box">Discover LOUSA <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+
+          <article class="chapter align-left" data-chapter="cycle" id="chapter-cycle">
+            <p class="eyebrow">YOUR CYCLE</p>
+            <h2>Your rhythm is more than a date.</h2>
+            <p class="chapter-copy">Follow your cycle over time and see how individual days begin to form a clearer pattern.</p>
+            <div class="micro-data" aria-label="Example cycle categories">
+              <span>Cycle day</span><span>Phase</span><span>History</span><span>Forecast</span>
+            </div>
+          </article>
+
+          <article class="chapter align-left" data-chapter="insight" id="chapter-insight">
+            <p class="eyebrow">PERSONAL INSIGHT</p>
+            <h2>Notice what changes.<br />Remember what matters.</h2>
+            <p class="chapter-copy">Mood, sleep, symptoms and everyday notes become part of one personal record.</p>
+            <ol class="annotation-list" aria-label="Observation areas">
+              <li><span>01</span>Mood</li>
+              <li><span>02</span>Sleep</li>
+              <li><span>03</span>Symptoms</li>
+              <li><span>04</span>Notes</li>
+            </ol>
+          </article>
+
+          <article class="chapter align-left" data-chapter="wellness" id="chapter-wellness">
+            <p class="eyebrow">WELLNESS</p>
+            <h2>Small signals form a bigger picture.</h2>
+            <p class="chapter-copy">Record how you feel and return to the patterns that matter to you.</p>
+            <div class="keywords" aria-label="Wellness categories">
+              <span>Mood</span><span>Energy</span><span>Sleep</span><span>Symptoms</span><span>Water</span><span>Notes</span>
+            </div>
+          </article>
+
+          <article class="chapter product-chapter" data-chapter="box" id="chapter-box">
+            <div class="product-folio" aria-hidden="true">
+              <img src="assets/05-product-hires.png" alt="" />
+            </div>
+            <div class="product-copy">
+              <p class="eyebrow">THE LOUSA BOX</p>
+              <h2>Care, curated around your rhythm.</h2>
+              <p class="chapter-copy">A considered collection of wellness essentials brought together as part of the LOUSA experience.</p>
+              <button class="button primary" data-jump="delivery">Discover the box</button>
+            </div>
+          </article>
+
+          <article class="chapter align-left" data-chapter="delivery" id="chapter-delivery">
+            <p class="eyebrow">FROM LOUSA TO YOU</p>
+            <h2>Care that finds its way to you.</h2>
+            <p class="chapter-copy">A considered experience from selection to delivery.</p>
+            <div class="route-caption"><span class="route-dot"></span><span>Curated</span><span>Prepared</span><span>On its way</span></div>
+          </article>
+
+          <article class="chapter final-copy align-left" data-chapter="final" id="chapter-final">
+            <p class="eyebrow">BEGIN YOUR RHYTHM</p>
+            <h2>A closer relationship<br />with your own rhythm.</h2>
+            <p class="chapter-copy">Track. Notice. Understand. Care.</p>
+            <div class="actions">
+              <button class="button primary" id="startButton">Start with LOUSA</button>
+              <button class="button text-button" data-jump="cycle">Explore the experience <span aria-hidden="true">↗</span></button>
+            </div>
+          </article>
+        </div>
+
+        <aside class="chapter-progress" aria-label="Story progress">
+          <div class="progress-line"><span id="progressFill"></span></div>
+          <div class="progress-numbers" id="progressNumbers">
+            <button data-jump="hero" aria-label="Go to introduction">01</button>
+            <button data-jump="cycle" aria-label="Go to cycle">02</button>
+            <button data-jump="insight" aria-label="Go to personal insight">03</button>
+            <button data-jump="wellness" aria-label="Go to wellness">04</button>
+            <button data-jump="box" aria-label="Go to the box">05</button>
+            <button data-jump="delivery" aria-label="Go to delivery">06</button>
+            <button data-jump="final" aria-label="Go to final">07</button>
+          </div>
+        </aside>
+
+        <div class="story-meta" id="storyMeta" aria-hidden="true">
+          <span class="story-meta-index" id="storyMetaIndex">I / VII</span>
+          <span class="story-meta-word" id="storyMetaWord">DISCOVER</span>
+        </div>
+
+        <div class="scroll-hint" id="scrollHint" aria-hidden="true">
+          <span>Scroll to follow the thread</span>
+          <i></i>
+        </div>
+
+        <div class="loading" id="loading" role="status" aria-live="polite">
+          <span class="loading-seal"></span>
+          <span>Loading the Codex</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="reduced-motion" id="reducedMotion" aria-label="LOUSA MOON story">
+      <div class="reduced-intro">
+        <p class="eyebrow">LOUSA MOON · THE LUNAR CODEX</p>
+        <h1>Know your rhythm. Care for it.</h1>
+      </div>
+      <div class="reduced-grid">
+        <figure><img src="assets/01.webp" alt="Ancient illustrated LOUSA MOON observatory" /><figcaption>Discover</figcaption></figure>
+        <figure><img src="assets/02.webp" alt="Illustrated lunar cycle mechanism" /><figcaption>Cycle</figcaption></figure>
+        <figure><img src="assets/03.webp" alt="Observation tablets and the Keeper" /><figcaption>Personal insight</figcaption></figure>
+        <figure><img src="assets/04.webp" alt="Wellness cabinet of observations" /><figcaption>Wellness</figcaption></figure>
+        <figure><img src="assets/05-product-hires.png" alt="LOUSA MOON product collection" /><figcaption>The LOUSA Box</figcaption></figure>
+        <figure><img src="assets/06.webp" alt="Illustrated delivery route" /><figcaption>Delivery</figcaption></figure>
+        <figure><img src="assets/07.webp" alt="Final illustrated courtyard" /><figcaption>Begin your rhythm</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="closing-note" id="closingNote">
+      <div class="closing-rule" aria-hidden="true"></div>
+      <div>
+        <p class="eyebrow">DESIGNED TO NOTICE WITH YOU</p>
+        <h2>One place for the details that make your month feel like yours.</h2>
+      </div>
+      <p>Cycle tracking, wellness notes and thoughtful care — held together without turning your body into a dashboard.</p>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer-brand">
+      <span class="footer-moon" aria-hidden="true"></span>
+      <strong>LOUSA MOON</strong>
+      <p>A calmer way to follow your cycle and everyday wellness.</p>
+    </div>
+    <div class="footer-links">
+      <div><span>Product</span><button data-jump="cycle">Cycle</button><button data-jump="wellness">Wellness</button><button data-jump="box">The Box</button></div>
+      <div><span>Experience</span><button data-jump="delivery">Delivery</button><button id="supportButton">Support</button></div>
+      <div><span>Legal</span><button disabled aria-disabled="true">Privacy</button><button disabled aria-disabled="true">Terms</button></div>
+    </div>
+    <div class="footer-bottom">
+      <p>LOUSA MOON supports personal cycle and wellness tracking. It does not diagnose medical conditions and does not replace professional medical care.</p>
+      <p>© 2026 LOUSA MOON</p>
+    </div>
+  </footer>
+
+  <dialog class="modal" id="availabilityModal">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <p class="eyebrow">LOUSA MOON</p>
+    <h2>App links are ready to connect.</h2>
+    <p>The design is prepared for App Store and Google Play links. Add the official URLs in <code>app.js</code> when they are available.</p>
+    <button class="button primary" id="modalDone">Got it</button>
+  </dialog>
+
+  <script src="chapters.js?v=10"></script>
+  <script src="app.js?v=10"></script>
+</body>
+</html>
